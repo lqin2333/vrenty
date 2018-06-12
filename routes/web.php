@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/show/{id}', 'Vehicle\VehicleController@show');
+Route::get('/show-all', 'Vehicle\VehicleController@showAll');
+
+Route::get('/order/create', 'Order\OrderController@create');
